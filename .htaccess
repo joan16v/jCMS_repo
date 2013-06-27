@@ -1,0 +1,7 @@
+#DirectoryIndex index.html index.php
+DirectoryIndex index.php
+
+#php_flag display_errors on
+
+AddType x-mapp-php5 .php
+AddHandler x-mapp-php5 .php

@@ -1,0 +1,233 @@
+h1{	
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: #2AA5EB;
+    font-size: 32px;
+    padding-bottom: 8px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #CCC;
+    line-height: 27px;
+    font-weight: 200;
+}
+
+h2 {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size:20px;
+    font-weight:normal;
+}
+
+.gal_img {    
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: #333;
+	font-size:20px;
+	font-weight:normal;
+    padding-bottom:8px;
+    margin-bottom:10px;
+    border-bottom:1px solid #ccc;
+    margin-top:30px;		
+}
+
+td, th {    
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-family: 'Roboto Condensed', sans-serif; 
+	font-size: 14px;	
+	color: #666;   
+}
+
+a {    
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-family: 'Roboto Condensed', sans-serif; 
+	color: #3D3D3D;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: none;
+	color:#C1960C;
+}
+
+p {    
+ 	font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+img {
+	border:0px;
+}
+
+body {
+	margin: 0px; 
+	padding: 0px;		
+	text-align:center;		
+	height: 100%;
+	background:#fff url(template/fondoWeb.png) top center fixed;
+	color:#666;    
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;  
+	font-size:14px;
+}
+
+#container {
+	position:relative;
+	margin:auto;
+	padding:0px;
+	width: 999px;
+	height:auto;
+	text-align:center;	
+    background:#fff;
+}
+
+#top {
+	position:relative;
+	margin:auto;
+	width: 999px;
+	height:386px;
+	text-align: left;
+	background:#fff;
+}	
+
+#center {
+	position:relative;
+	width:999px;
+	padding:0px;
+	margin:auto;
+	text-align:left;
+}
+
+#content {
+	position:relative;
+    float:right;
+    margin-right: 30px;
+	padding: 0px;
+	width:639px;
+	overflow: hidden;    
+    line-height:20px;
+}
+
+#links {
+	position:relative;
+    float: left;	
+    margin-left: 0px;
+    margin-top:1px;
+	width: 282px;	
+	overflow:hidden;
+}
+
+#bottom {
+	position:relative;
+	clear:both;
+	width:999px;
+	height:136px;
+	margin:auto;
+	background:url(template/pie.jpg) no-repeat;
+    margin-top:30px;
+}
+
+.box {
+    background: #FFF;
+    color: #B0B0B0;
+    position: relative;
+    width: 282px;
+    height: 35px;
+    margin-left: 0px;
+    text-align: left;
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-bottom: 10px;
+    font-size: 35px;
+    border-bottom: 1px solid #EBEBEB;
+    font-weight: 200;
+}
+
+#menu_header {
+    position:absolute;
+    overflow:hidden;
+    width:979px;
+    height:32px;
+    top:118px;
+    padding-top:5px;
+    padding-left:20px;
+    border-top:1px solid #e5e5e5;
+}
+
+.links_subnivel0 {
+    margin-right:30px;
+    position:relative;
+    float:left;
+}
+
+.links_subnivel0 a {
+    font-size: 18px;
+    font-weight: 200;    
+    color:#777;
+}
+.links_subnivel0 a:hover {
+    color: #007bc3;
+    text-decoration:none;
+}
+.links_subnivel1 {
+    padding-left:10px;
+    padding-bottom:10px;
+    display: none;
+}
+
+.contentProducto {
+    position:relative;
+    float:left;
+    width:178px; 
+    height:180px;
+    /*background:url(/template/cajaprod.png);*/
+    overflow:hidden;
+    margin-right:20px;
+    margin-bottom:20px;
+}
+
+.fotoProducto {
+    position:absolute;
+    width:176px; 
+    top:20px;
+    text-align:center;
+}
+
+.fotoProducto a img {
+    border:1px solid #999;
+}
+
+.contenedorImagenesProductos img {
+    border:1px solid #999;
+}
+
+.nombreProducto {    
+    position:absolute;
+    width:176px;    
+    top:160px;  
+    left:0px;  
+    line-height:20px;
+    text-align:center;
+    overflow:hidden;
+}
+
+.imagenProducto {
+    position:relative;
+    float:left;
+    width:120px;
+    height:120px;    
+}
+
+.contentNoticia {
+    position:relative;
+    margin-top:20px;
+}
+
+.imagenNoticia {
+    position: relative;
+    float:left;
+    margin-right:20px;
+}
+
+.tituloNoticia a {
+    color: #464646;
+    font-size: 18px;
+    font-weight: 400;
+}

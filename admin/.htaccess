@@ -1,0 +1,6 @@
+#AuthUserFile /kunden/homepages/26/d318060259/htdocs/jcms/admin/.htpasswd
+#AuthGroupFile /dev/null
+#AuthName EnterPassword
+#AuthType Basic
+
+#require user admin

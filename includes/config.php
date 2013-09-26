@@ -1,7 +1,13 @@
 ﻿<? 
 
+// jCMS
+// created by Joan Gimenez Donat
+// @joan16v
+// joan16v@gmail.com
+
+// configuration file
+
 session_start();
-//print_r($_SESSION["lang_session"]);
 
 if (!isset($_SESSION["lang_session"])) {
     include("php_language_detection.php");
@@ -16,7 +22,7 @@ if (!isset($_SESSION["lang_session"])) {
 }
 if (!isset($_SESSION["lang_session"])) {$_SESSION["lang_session"]="ES";}
 
-//setear idioma
+//set language
 if( isset($_GET['lang']) ) {
     if( $_GET['lang']=="ES" || $_GET['lang']=="EN" ) {
         $_SESSION["lang_session"]=$_GET['lang'];        
@@ -25,7 +31,7 @@ if( isset($_GET['lang']) ) {
     }
 }
 
-//conexion a bbdd
+//bbdd connection
 $link = mysql_connect("bbdd.server.com", "username", "password") or die("Could not connect: " . mysql_error());
 mysql_select_db("bbdd_name");
 mysql_query("SET NAMES utf8");

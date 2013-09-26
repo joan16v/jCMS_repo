@@ -1,5 +1,7 @@
 <? 
 
+// SEO title
+
 if(isset($_GET['id'])) {
     $id_seccion=GetSQLValueString($_GET['id'],"int");
     $rowSeccion=mysql_fetch_object(mysql_query("select * from jcms_secciones where id='".$id_seccion."'"));

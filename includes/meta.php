@@ -28,7 +28,7 @@
         echo $descripcion;        
     } 
     if( !isset($_GET['id']) && !isset($_GET['id_prod']) && !isset($_GET['id_not']) ) {
-        ?>Azzurra - The sporting symbol of the Yacht Club Costa Smeralda<?
+        ?>jCMS - free and simple php mysql content management system<?
     }        
 ?>" />
 <meta name="KEYWORDS" content="<? 
@@ -42,7 +42,7 @@
         echo str_replace(" ",",",$descripcion);        
     }  
     if( !isset($_GET['id']) && !isset($_GET['id_prod']) && !isset($_GET['id_not']) ) {
-        ?>Azzurra, sporting, symbol, Yacht, Club, Costa, Smeralda.<?
+        ?>jcms, php, mysql, css, cms, jquery, joan16v.<?
     }            
 ?>" />
 <meta name="OWNER" content="<? echo EMAIL_OWNER; ?>" />

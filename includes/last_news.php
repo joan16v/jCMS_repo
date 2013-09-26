@@ -1,6 +1,6 @@
 <? 
 
-    //ultima noticiaa
+    //last news module
     if( mysql_num_rows(mysql_query("select * from jcms_noticias"))>0 ) {
         ?><div style="clear: both;"><!-- separador --></div><?
         $sqlP="select * from jcms_noticias order by fecha desc limit 3";

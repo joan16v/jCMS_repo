@@ -1,6 +1,10 @@
 <?php
 
 // jCMS
+// created by Joan Gimenez Donat
+// @joan16v
+// joan16v@gmail.com
+
 include('includes/config.php');
 
 ?>

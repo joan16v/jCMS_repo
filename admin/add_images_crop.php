@@ -104,7 +104,7 @@ if( $_FILES['userfile']['name']!="" ) {
         <div style="margin: 20px;">
             <h1>Subir fotos al servidor con jQuery CROP (beta)</h1>    
             
-            <div><img src="/images/<? echo $foto_name; ?>" id="cropbox" /></div>
+            <div><img src="../images/<? echo $foto_name; ?>" id="cropbox" /></div>
             
         	<div style="margin-top:20px;">
         		Elige un el trozo de imagen que quieras y pulsa el boton Adelante.

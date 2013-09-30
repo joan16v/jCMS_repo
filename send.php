@@ -1,7 +1,9 @@
 <?php
   
   require_once('includes/recaptcha/recaptchalib.php');
-  $privatekey = "6LdU_ucSAAAAAF-OkKq5l9Sr8uP85-HvACks194P";
+  //change this with your recaptcha key
+  // get it: http://www.google.com/recaptcha
+  $privatekey = "6LdU_ucSAAAAAF-OkKq5l9Sr8uP85-HvACks194P"; 
   $resp = recaptcha_check_answer ($privatekey,
                                 $_SERVER["REMOTE_ADDR"],
                                 $_POST["recaptcha_challenge_field"],

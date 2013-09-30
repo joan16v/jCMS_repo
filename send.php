@@ -19,7 +19,7 @@
     
     //OK    
     $mail=$_POST['email'];
-    $mymail="joan16v@gmail.com";
+    $mymail="joan16v@gmail.com"; //your mail here
     $subject="Formulario de contacto";
     
     $header = "From:$mail\nReply-To:$mail\n";

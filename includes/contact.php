@@ -51,7 +51,10 @@ if( $_SESSION["lang_session"]=="EN" ) {
         <div style="margin-top: 10px;">
             <?php
               require_once('recaptcha/recaptchalib.php');
-              $publickey = "6LdU_ucSAAAAAP_jC-RAlla-yymu9goT4cbgRFsU"; // you got this from the signup page
+              // you got this from the signup page
+              // www.google.com/recaptcha
+              // also in /send.php
+              $publickey = "6LdU_ucSAAAAAP_jC-RAlla-yymu9goT4cbgRFsU"; 
               echo recaptcha_get_html($publickey);
             ?>        
         </div>

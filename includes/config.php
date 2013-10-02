@@ -5,10 +5,25 @@
 // @joan16v
 // joan16v@gmail.com
 
-// configuration file
+// configuration & functions file
 
 session_start();
 
+//bbdd connection
+$link = mysql_connect("bbdd.server.com", "username", "password") or die("Could not connect: " . mysql_error());
+mysql_select_db("bbdd_name");
+mysql_query("SET NAMES utf8");
+//bbdd connection
+
+//DEFINES
+define('PAGE_TITLE','jCMS - free and simple php+mysql content management system');
+define('EMAIL_OWNER','joan16v@gmail.com');
+define('SERVER_DIR',$_SERVER['DOCUMENT_ROOT']."/");
+define('PAGE_DIR','jcms/');
+define('BASE_HREF', "http://".$_SERVER['HTTP_HOST']."/".PAGE_DIR);
+//DEFINES
+
+//lang detection
 if (!isset($_SESSION["lang_session"])) {
     include("php_language_detection.php");
     $array_idiomas_navegador=get_languages("data");
@@ -30,18 +45,6 @@ if( isset($_GET['lang']) ) {
         exit(0);
     }
 }
-
-//bbdd connection
-$link = mysql_connect("bbdd.server.com", "username", "password") or die("Could not connect: " . mysql_error());
-mysql_select_db("bbdd_name");
-mysql_query("SET NAMES utf8");
-
-//DEFINES
-define('PAGE_TITLE','jCMS - free and simple php+mysql content management system');
-define('EMAIL_OWNER','joan16v@gmail.com');
-define('SERVER_DIR',$_SERVER['DOCUMENT_ROOT']."/");
-define('PAGE_DIR','jcms/');
-define('BASE_HREF', "http://".$_SERVER['HTTP_HOST']."/".PAGE_DIR);
 
 function reSanitizar( $x ) {    
     $x=str_replace("Á","A",$x);    

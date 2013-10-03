@@ -1,5 +1,7 @@
 <? 
 
+//administracion de jCMS
+
 include('../includes/config.php');
 
 ?>

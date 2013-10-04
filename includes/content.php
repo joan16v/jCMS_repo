@@ -1,5 +1,6 @@
 <? 
 
+//seccion
 if(isset($_GET['id'])) {
     
     //contenido de la seccion
@@ -10,7 +11,7 @@ if(isset($_GET['id'])) {
     $contenido=youtube($contenido);
     echo $contenido;
     
-    //productos
+    //mostrar productos de la seccion
     if( mysql_num_rows(mysql_query("select * from jcms_productos where id_seccion='".$id_seccion."'"))>0 ) {
         ?><div style="clear: both;"><!-- separador --></div><?
         $sqlP="select * from jcms_productos where id_seccion='".$id_seccion."' order by orden asc";
@@ -37,7 +38,7 @@ if(isset($_GET['id'])) {
         }
     }
     
-    //noticias
+    //mostrar noticias de la seccion
     if( mysql_num_rows(mysql_query("select * from jcms_noticias where id_seccion='".$id_seccion."'"))>0 ) {
         ?><div style="clear: both;"><!-- separador --></div><?
         $sqlP="select * from jcms_noticias where id_seccion='".$id_seccion."' order by fecha desc";
@@ -78,6 +79,7 @@ if(isset($_GET['id'])) {
     
 }  
 
+//mostrar producto
 if(isset($_GET['id_prod'])) {
     
     //mostrar un producto
@@ -131,6 +133,7 @@ if(isset($_GET['id_prod'])) {
     
 }
 
+//mostrar noticia
 if(isset($_GET['id_not'])) {
     
     //mostrar una noticia
@@ -157,6 +160,7 @@ if(isset($_GET['id_not'])) {
     
 }
 
+//busqueda
 if(isset($_GET['search'])) {
     
     //busqueda
@@ -182,6 +186,7 @@ if(isset($_GET['search'])) {
     
 }
 
+//contenido default
 if( !isset($_GET['id']) && !isset($_GET['id_prod']) && !isset($_GET['id_not']) && !isset($_GET['search']) ) {
     
     if( isset($_GET['seccion']) ) {

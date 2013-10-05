@@ -1,5 +1,7 @@
 <? 
 
+//logica para mostrar los menus de secciones
+
 $sub_level=0;
 
 function buscar_hijos_rec($id_cat) {
@@ -31,14 +33,9 @@ function id_padre($id) {
 $sql2="select * from jcms_secciones where id_padre=0 order by orden asc";
 $ex2=mysql_query($sql2);
 while( $row2=mysql_fetch_object($ex2) ) {
-    
     $id=$row2->id;
     $nombre_sec=($row2->nombre);
     if( $_SESSION["lang_session"]=="EN" ) $nombre_sec=$row2->nombre_en;
-    
-    //$display="";
-    //if($id==4) $display="style=\"display:none;\"";    
-    
     echo "<div class=\"links_subnivel".$sub_level."\" ".$display."><a href=\"index.php?id=".$id."&desc=".url_clean($nombre_sec)."\">".strtoupper($nombre_sec)."</a></div>";
     buscar_hijos_rec($id);
     $sub_level=0;

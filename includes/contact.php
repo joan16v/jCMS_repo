@@ -1,5 +1,7 @@
 <? 
 
+//the contact form page
+
 //variables idioma
 $h1="Contacto";
 $nombre="Nombre";

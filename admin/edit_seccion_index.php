@@ -1,5 +1,7 @@
 <? 
 
+//esta es la pagina de admin para editar el index
+
 include('../includes/config.php');
 
 if( isset( $_POST['contenido'] ) ) {

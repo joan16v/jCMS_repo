@@ -1,3 +1,4 @@
+<!-- SEARCH BOX -->
 <div style="margin-top: 20px;">
     <form action="index.php" method="get">
     <div style="position: absolute; top: 0px; left:-4000px;;"><input type="submit" /></div>

@@ -119,27 +119,6 @@ include('includes/config.php');
         <div id="center">
             
             <div id="links">
-            
-                <? /* ?>
-                <!-- secciones -->
-                <!--
-                <div class="box">
-                    <? 
-                        //$nombre_box="SECCIONES";
-                        //if( $_SESSION["lang_session"]=="EN" ) $nombre_box="SECTIONS";
-                        //echo $nombre_box;
-                    ?>
-                </div>                   
-                <div style="margin-top: 20px; margin-left:20px; margin-bottom:20px;">   
-                <? //include('includes/links.php'); ?>
-                <?
-                    //$nombre_sec_contacto="Contacto";
-                    //if( $_SESSION["lang_session"]=="EN" ) $nombre_sec_contacto="Contact";
-                    //echo "<div class=\"links_subnivel0\"><a href=\"index.php?seccion=contacto\">".$nombre_sec_contacto."</a></div>";
-                ?>
-                </div>
-                -->
-                <? */ ?>
                 
                 <!-- ultima noticia -->
                 <div class="box">
@@ -167,11 +146,11 @@ include('includes/config.php');
                 
             </div>
 
-			<div id="content">
+	    <div id="content">
                 <? include('includes/content.php'); ?>
-			</div>
+	    </div>
             
-		</div>
+	</div>
         
         <div style="clear: both;"><!-- separador --></div>   
        

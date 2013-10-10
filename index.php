@@ -36,7 +36,7 @@ include('includes/config.php');
 </head>
 
 <body>    
-	<div id="container">
+    <div id="container">
 		
         <div id="top">		
             <div style="position: absolute; top:4px; left:27px;"><a title="jCMS" href="index.php"><img src="template/logo_jcms.jpg" /></a></div>
@@ -50,14 +50,13 @@ include('includes/config.php');
                 <? echo "<div class=\"links_subnivel0\"><a href=\"index.php?seccion=contacto\">".$contactar."</a></div>"; ?>
             </div>            
             
-		</div>		
+	</div>		
         
         <!-- idiomas -->
         <div style="position:absolute; top:43px; right:13px;">
             <a href="index.php?lang=ES"><img src="template/esp.png" /></a> &nbsp; <a href="index.php?lang=EN"><img src="template/ing.png" /></a>
         </div>                   
         
-        <?  ?>
         <script type="text/javascript">
             $(window).load(function() {
                 $('#slider').nivoSlider({
@@ -114,7 +113,6 @@ include('includes/config.php');
                 <img src="template/cab3.jpg" alt="" />
             </div>
         </div>        
-        <?  ?>
 		
         <div id="center">
             

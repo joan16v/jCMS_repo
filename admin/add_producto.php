@@ -1,5 +1,7 @@
 <? 
 
+//add product
+
 include('../includes/config.php');
 
 if ( !function_exists('json_decode') ){

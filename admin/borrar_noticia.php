@@ -1,5 +1,7 @@
 <? 
 
+//delete news
+
 include('../includes/config.php');
 
 if( isset( $_GET['id'] ) ) {

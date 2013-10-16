@@ -1,5 +1,7 @@
 <? 
 
+//edit categories
+
 include('../includes/config.php');
 
 if( isset( $_POST['nombre'] ) ) {

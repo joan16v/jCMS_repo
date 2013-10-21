@@ -1,5 +1,7 @@
 <? 
 
+//add and crop images
+
 include('../includes/config.php');
 
 function file_extension($filename) {

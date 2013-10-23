@@ -1,10 +1,10 @@
-h1{
+h1 {
 	color: #333;
 	font-size:18px;
 	font-weight:bold;
-    padding-bottom:8px;
-    margin-bottom:10px;
-    border-bottom:1px solid #ccc;		
+	padding-bottom:8px;
+	margin-bottom:10px;
+	border-bottom:1px solid #ccc;		
 }
 
 td, th {
@@ -24,9 +24,9 @@ a:hover {
 	color:#333333;
 }
 
-p{
+p {
  	font-family: Verdana, Arial, Helvetica, sans-serif;
- }
+}
 
 img {
 	border:0px;

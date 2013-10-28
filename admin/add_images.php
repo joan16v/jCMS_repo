@@ -1,3 +1,8 @@
+<? 
+
+//add images
+
+?>
 <html>
 <head>
 <title>Subir fotos al servidor</title>

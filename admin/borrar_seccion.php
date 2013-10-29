@@ -1,5 +1,7 @@
 <? 
 
+//delete categories
+
 include('../includes/config.php');
 
 if( isset( $_GET['id'] ) ) {

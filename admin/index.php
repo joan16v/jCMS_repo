@@ -1,6 +1,6 @@
 <? 
 
-//administracion de jCMS
+//jCMS admin zone
 
 include('../includes/config.php');
 

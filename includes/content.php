@@ -1,5 +1,7 @@
 <? 
 
+//content div public zone
+
 //seccion
 if(isset($_GET['id'])) {
     

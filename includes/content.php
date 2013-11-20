@@ -93,7 +93,7 @@ if(isset($_GET['id_prod'])) {
     
     ?><h1><? echo strtoupper($nombre_producto); ?></h1><?
     
-    /* ?><h2><? echo $rowProducto->precio; ?> &euro;</h2><? */
+    ?><h2><? echo $rowProducto->precio; ?> &euro;</h2><?
     
     $descripcion=$rowProducto->descripcion;
     if( $_SESSION["lang_session"]=="EN" ) $descripcion=$rowProducto->descripcion_en;

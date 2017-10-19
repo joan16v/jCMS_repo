@@ -1,14 +1,8 @@
 <?php
 
-//script que genera un thumbnail de una imagen
-
 $fuente = @imagecreatefromjpeg(str_replace(" ","%20",$_GET['foto']));
 if(!$fuente) $fuente = @imagecreatefromgif(str_replace(" ","%20",$_GET['foto']));
 if(!$fuente) $fuente = @imagecreatefrompng(str_replace(" ","%20",$_GET['foto']));
-
-//$fuente = @imagecreatefromjpeg(($_GET['foto']));
-//if(!$fuente) $fuente = @imagecreatefromgif(($_GET['foto']));
-//if(!$fuente) $fuente = @imagecreatefrompng(($_GET['foto']));
 
 $imgAncho = imagesx($fuente);
 $imgAlto = imagesy($fuente);

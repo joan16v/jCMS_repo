@@ -1,4 +1,4 @@
-h1{	
+h1 {
     font-family: Verdana, Arial, Helvetica, sans-serif;
     font-family: 'Roboto Condensed', sans-serif;
     color: #2AA5EB;
@@ -16,111 +16,111 @@ h2 {
     font-weight:normal;
 }
 
-.gal_img {    
-	font-family: Verdana, Arial, Helvetica, sans-serif;
+.gal_img {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
     font-family: 'Roboto Condensed', sans-serif;
     color: #333;
-	font-size:20px;
-	font-weight:normal;
+    font-size:20px;
+    font-weight:normal;
     padding-bottom:8px;
     margin-bottom:10px;
     border-bottom:1px solid #ccc;
-    margin-top:30px;		
+    margin-top:30px;
 }
 
-td, th {    
-	font-family: Verdana, Arial, Helvetica, sans-serif;
-    font-family: 'Roboto Condensed', sans-serif; 
-	font-size: 14px;	
-	color: #666;   
+td, th {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 14px;
+    color: #666;
 }
 
-a {    
-	font-family: Verdana, Arial, Helvetica, sans-serif;
-    font-family: 'Roboto Condensed', sans-serif; 
-	color: #3D3D3D;
-	text-decoration: none;
+a {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: #3D3D3D;
+    text-decoration: none;
 }
 
 a:hover {
-	text-decoration: none;
-	color:#C1960C;
+    text-decoration: none;
+    color:#C1960C;
 }
 
-p {    
- 	font-family: Verdana, Arial, Helvetica, sans-serif;
+p {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
     font-family: 'Roboto Condensed', sans-serif;
 }
 
 img {
-	border:0px;
+    border:0px;
 }
 
 body {
-	margin: 0px; 
-	padding: 0px;		
-	text-align:center;		
-	height: 100%;
-	background:#fff url(template/fondoWeb.png) top center fixed;
-	color:#666;    
-	font-family:Verdana, Arial, Helvetica, sans-serif;
-    font-family: 'Roboto Condensed', sans-serif;  
-	font-size:14px;
+    margin: 0px;
+    padding: 0px;
+    text-align:center;
+    height: 100%;
+    background:#fff url(template/fondoWeb.png) top center fixed;
+    color:#666;
+    font-family:Verdana, Arial, Helvetica, sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size:14px;
 }
 
 #container {
-	position:relative;
-	margin:auto;
-	padding:0px;
-	width: 999px;
-	height:auto;
-	text-align:center;	
+    position:relative;
+    margin:auto;
+    padding:0px;
+    width: 999px;
+    height:auto;
+    text-align:center;
     background:#fff;
 }
 
 #top {
-	position:relative;
-	margin:auto;
-	width: 999px;
-	height:386px;
-	text-align: left;
-	background:#fff;
-}	
+    position:relative;
+    margin:auto;
+    width: 999px;
+    height:386px;
+    text-align: left;
+    background:#fff;
+}
 
 #center {
-	position:relative;
-	width:999px;
-	padding:0px;
-	margin:auto;
-	text-align:left;
+    position:relative;
+    width:999px;
+    padding:0px;
+    margin:auto;
+    text-align:left;
 }
 
 #content {
-	position:relative;
+    position:relative;
     float:right;
     margin-right: 30px;
-	padding: 0px;
-	width:639px;
-	overflow: hidden;    
+    padding: 0px;
+    width:639px;
+    overflow: hidden;
     line-height:20px;
 }
 
 #links {
-	position:relative;
-    float: left;	
+    position:relative;
+    float: left;
     margin-left: 0px;
     margin-top:1px;
-	width: 282px;	
-	overflow:hidden;
+    width: 282px;
+    overflow:hidden;
 }
 
 #bottom {
-	position:relative;
-	clear:both;
-	width:999px;
-	height:136px;
-	margin:auto;
-	background:url(template/pie.jpg) no-repeat;
+    position:relative;
+    clear:both;
+    width:999px;
+    height:136px;
+    margin:auto;
+    background:url(template/pie.jpg) no-repeat;
     margin-top:30px;
 }
 
@@ -159,13 +159,15 @@ body {
 
 .links_subnivel0 a {
     font-size: 18px;
-    font-weight: 200;    
+    font-weight: 200;
     color:#777;
 }
+
 .links_subnivel0 a:hover {
     color: #007bc3;
     text-decoration:none;
 }
+
 .links_subnivel1 {
     padding-left:10px;
     padding-bottom:10px;
@@ -175,7 +177,7 @@ body {
 .contentProducto {
     position:relative;
     float:left;
-    width:178px; 
+    width:178px;
     height:180px;
     /*background:url(/template/cajaprod.png);*/
     overflow:hidden;
@@ -185,7 +187,7 @@ body {
 
 .fotoProducto {
     position:absolute;
-    width:176px; 
+    width:176px;
     top:20px;
     text-align:center;
 }
@@ -198,11 +200,11 @@ body {
     border:1px solid #999;
 }
 
-.nombreProducto {    
+.nombreProducto {
     position:absolute;
-    width:176px;    
-    top:160px;  
-    left:0px;  
+    width:176px;
+    top:160px;
+    left:0px;
     line-height:20px;
     text-align:center;
     overflow:hidden;
@@ -212,7 +214,7 @@ body {
     position:relative;
     float:left;
     width:120px;
-    height:120px;    
+    height:120px;
 }
 
 .contentNoticia {

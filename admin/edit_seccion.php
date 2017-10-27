@@ -98,8 +98,8 @@ if (isset($_POST['nombre'])) {
                     <div><select name="id_padre" style="width: 300px;">
                         <option value="0" <?php if ($rowSeccion->id_padre == 0) { echo "selected"; } ?>>RAÍZ</option><?
 
-                        $sub_level=0;
-                        $idPadre=$rowSeccion->id_padre;
+                        $sub_level = 0;
+                        $idPadre = $rowSeccion->id_padre;
                         function buscar_hijos_rec($id_cat) {
                             global $sub_level;
                             global $idPadre;
@@ -130,7 +130,7 @@ if (isset($_POST['nombre'])) {
 
                     <?php
                 } else {
-                    $sub_level=0;
+                    $sub_level = 0;
                     echo "<div style=\"padding-left:" . ($sub_level * 10) . "px;\">Index <a title=\"Editar seccion\" href=\"edit_seccion_index.php\"><img src=\"images/gtk-edit.png\"></a></div>";
                     function buscar_hijos_rec($id_cat) {
                         global $sub_level;
@@ -147,7 +147,7 @@ if (isset($_POST['nombre'])) {
                     }
                     $sql2 = "select * from jcms_secciones where id_padre=0 order by orden asc";
                     $ex2 = mysql_query($sql2);
-                    while ($row2=mysql_fetch_object($ex2)) {
+                    while ($row2 = mysql_fetch_object($ex2)) {
                         $id = $row2->id;
                         echo "<div style=\"padding-left:" . ($sub_level * 10) . "px;\">" . $row2->nombre . " <a title=\"Editar seccion\" href=\"edit_seccion.php?id=" . $id . "\"><img src=\"images/gtk-edit.png\"></a></div>";
                         buscar_hijos_rec($id);

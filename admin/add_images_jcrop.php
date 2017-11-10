@@ -23,7 +23,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                 <h1>Subir fotos al servidor con jQuery CROP (beta)</h1>
                 <div>Foto subida correctamente.</div>
                 <div style="margin-top: 5px;">
-                    <img src="<? echo $src; ?>" />
+                    <img src="<?php echo $src; ?>" />
                 </div>
                 <div style="margin-top: 5px;">
                     <input type="button" value="OK" onclick="window.location='index.php'" />

@@ -1,12 +1,6 @@
-#this is the .htaccess file
-#is used to password protect the admin folder
-#you must set the path of the AuthUserFile
-#and edit the .httpasswd file, using the data generated (e.g.) here:
-#http://bit.ly/oJvSsX
+AuthUserFile ./.htpasswd
+AuthGroupFile /dev/null
+AuthName EnterPassword
+AuthType Basic
 
-#AuthUserFile /kunden/homepages/26/d318060259/htdocs/jcms/admin/.htpasswd
-#AuthGroupFile /dev/null
-#AuthName EnterPassword
-#AuthType Basic
-
-#require user admin
+require user admin

@@ -1,12 +1,5 @@
 <?php
 
-/**
- * Jcrop image cropping plugin for jQuery
- * Example cropping script
- * @copyright 2008-2009 Kelly Hallman
- * More info: http://deepliquid.com/content/Jcrop_Implementation_Theory.html
- */
-
 if ($_SERVER['REQUEST_METHOD'] == 'POST')
 {
 	//$targ_w = $targ_h = 150;
@@ -36,7 +29,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST')
     <div style="margin: 20px;">
         <h1>Subir fotos al servidor con jQuery CROP (beta)</h1>    
         
-        <div>Foto subida con éxito.</div>
+        <div>Foto subida con Ã©xito.</div>
         
         <div>
             <img src="<? echo $src; ?>" />

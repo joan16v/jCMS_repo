@@ -9,10 +9,10 @@ function file_extension($filename) {
 
 function RandomString($length = 10, $uc = TRUE, $n = TRUE, $sc = FALSE) {
     $source = 'abcdefghijklmnopqrstuvwxyz';
-    if ($uc==1) {
+    if ($uc == 1) {
         $source .= 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
     }
-    if ($n==1) {
+    if ($n == 1) {
         $source .= '1234567890';
     }
     if ($sc == 1) {
@@ -24,7 +24,7 @@ function RandomString($length = 10, $uc = TRUE, $n = TRUE, $sc = FALSE) {
         for ($i = 1; $i <= $length; $i++) {
             mt_srand((double)microtime() * 1000000);
             $num = mt_rand(1, count($source));
-            $rstr .= $source[$num-1];
+            $rstr .= $source[$num - 1];
         }
     }
     return $rstr;

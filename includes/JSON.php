@@ -148,13 +148,13 @@ class Services_JSON
     function utf162utf8($utf16)
     {
         // oh please oh please oh please oh please oh please
-        if(function_exists('mb_convert_encoding')) {
+        if (function_exists('mb_convert_encoding')) {
             return mb_convert_encoding($utf16, 'UTF-8', 'UTF-16');
         }
 
         $bytes = (ord($utf16{0}) << 8) | ord($utf16{1});
 
-        switch(true) {
+        switch (true) {
             case ((0x7F & $bytes) == $bytes):
                 // this case should never be reached, because we are in ASCII range
                 // see: http://www.cl.cam.ac.uk/~mgk25/unicode.html#utf-8
@@ -639,8 +639,6 @@ class Services_JSON
                         }
                     }
 
-                    //print("\nparsing {$chrs}\n");
-
                     $strlen_chrs = strlen($chrs);
 
                     for ($c = 0; $c <= $strlen_chrs; ++$c) {
@@ -740,8 +738,6 @@ class Services_JSON
                             for ($i = $top['where']; $i <= $c; ++$i)
                                 $chrs = substr_replace($chrs, ' ', $i, 1);
 
-                            //print("Found end of comment at {$c}: ".substr($chrs, $top['where'], (1 + $c - $top['where']))."\n");
-
                         }
 
                     }
@@ -785,7 +781,6 @@ if (class_exists('PEAR_Error')) {
 
 } else {
 
-
     class Services_JSON_Error
     {
         function Services_JSON_Error($message = 'unknown error', $code = null,
@@ -796,5 +791,3 @@ if (class_exists('PEAR_Error')) {
     }
 
 }
-    
-?>

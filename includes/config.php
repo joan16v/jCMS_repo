@@ -72,7 +72,7 @@ function reSanitizar( $x ) {
 }
 
 function limpiar_nombre_foto($x) {
-    return( ereg_replace("[^.A-Za-z0-9_-]", "", $x));
+    return ereg_replace("[^.A-Za-z0-9_-]", "", $x);
 }
 
 function url_clean($x) {
@@ -102,7 +102,6 @@ function url_clean($x) {
     $x = str_replace("ñ", "n", $x);
     $x = strtolower($x);
     return ereg_replace( "[^.A-Za-z0-9_-]", "", $x);
-    return $x;
 }
 
 if (!function_exists("GetSQLValueString")) {

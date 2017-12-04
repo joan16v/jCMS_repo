@@ -45,7 +45,7 @@ if (isset($_GET['lang'])) {
     }
 }
 
-function reSanitizar( $x ) {
+function reSanitizar($x) {
     $x = str_replace("Á", "A", $x);
     $x = str_replace("À", "A", $x);
     $x = str_replace("É", "E", $x);
